@@ -118,10 +118,10 @@ object DataProviderManager {
 This is called an *object declaration*, and it always has a name following the *object*{: .keyword } keyword.
 Just like a variable declaration, an object declaration is not an expression, and cannot be used on the right hand side of an assignment statement.
 
-To refer to the object, we use its name directly:
+To refer to the object, we use *INSTANCE*{: .keyword } after its name as like the following:
 
 ``` kotlin
-DataProviderManager.registerDataProvider(...)
+DataProviderManager.INSTANCE.registerDataProvider(...)
 ```
 
 Such objects can have supertypes:
